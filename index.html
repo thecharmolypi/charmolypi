@@ -27,7 +27,6 @@
     overflow-x: hidden;
   }
 
-  /* --- NAV --- */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -66,7 +65,6 @@
 
   nav ul a:hover { color: var(--off-white); }
 
-  /* --- HERO --- */
   #hero {
     min-height: 100vh;
     display: flex;
@@ -85,7 +83,6 @@
       radial-gradient(ellipse at 80% 20%, rgba(90,85,80,0.08) 0%, transparent 50%);
   }
 
-  /* texture overlay */
   .hero-bg::after {
     content: '';
     position: absolute;
@@ -142,7 +139,6 @@
 
   .hero-meta span { color: var(--off-white); display: block; font-size: 0.9rem; text-transform: none; letter-spacing: 0; margin-top: 0.3rem; font-style: italic; }
 
-  /* --- SECTIONS --- */
   section {
     padding: 6rem 2.5rem;
     max-width: 1100px;
@@ -169,7 +165,6 @@
     opacity: 0.4;
   }
 
-  /* --- BAND --- */
   #band { border-top: 1px solid #1a1a1a; }
 
   .band-grid {
@@ -208,7 +203,6 @@
     font-style: italic;
   }
 
-  /* --- MUSIC --- */
   #music { border-top: 1px solid #1a1a1a; }
 
   .track-list {
@@ -230,6 +224,7 @@
     font-family: 'Special Elite', cursive;
     font-size: 1.15rem;
     color: var(--off-white);
+    flex: 1;
   }
 
   .track-type {
@@ -238,6 +233,8 @@
     text-transform: uppercase;
     color: var(--mid);
     white-space: nowrap;
+    flex: 1;
+    text-align: center;
   }
 
   .track-status {
@@ -246,7 +243,6 @@
     font-style: italic;
   }
 
-  /* --- SHOWS --- */
   #shows { border-top: 1px solid #1a1a1a; }
 
   .show-item {
@@ -287,7 +283,6 @@
     opacity: 0.8;
   }
 
-  /* --- CONTACT --- */
   #contact { border-top: 1px solid #1a1a1a; }
 
   .contact-block {
@@ -329,7 +324,6 @@
 
   .contact-email:hover { color: var(--accent); }
 
-  /* --- FOOTER --- */
   footer {
     border-top: 1px solid #1a1a1a;
     padding: 2rem 2.5rem;
@@ -342,7 +336,6 @@
     margin: 0 auto;
   }
 
-  /* --- MOBILE --- */
   @media (max-width: 640px) {
     nav ul { gap: 1.2rem; }
     nav ul a { font-size: 0.68rem; }
@@ -369,7 +362,6 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <div id="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
@@ -377,14 +369,13 @@
     <h1>C H A R M O L Y P I</h1>
     <p class="hero-sub">A couple of idiots trying to start a band.</p>
     <div class="hero-meta">
-      <div>First show<span>TBD</span></div>
+      <div>First show<span>October 2nd</span></div>
       <div>Genre<span>Grunge</span></div>
       <div>Based in<span>Lincolnton, NC</span></div>
     </div>
   </div>
 </div>
 
-<!-- BAND -->
 <section id="band">
   <p class="section-label">The band</p>
   <div class="band-grid">
@@ -404,14 +395,18 @@
   </div>
 </section>
 
-<!-- MUSIC -->
 <section id="music">
   <p class="section-label">Music</p>
   <div class="track-list">
     <div class="track">
-      <p class="track-title">Album — TBD</p>
-      <p class="track-type">Album</p>
+      <p class="track-title">Talent Show Rehersals</p>
+      <p class="track-type">EP</p>
       <p class="track-status">in progress</p>
+    </div>
+    <div class="track">
+      <p class="track-title">Live At Talent Show</p>
+      <p class="track-type">Single</p>
+      <p class="track-status">Upcoming</p>
     </div>
     <div class="track">
       <p class="track-title">Album — TBD</p>
@@ -426,16 +421,15 @@
   </div>
 </section>
 
-<!-- SHOWS -->
 <section id="shows">
   <p class="section-label">Shows</p>
   <div class="show-item">
-    <p class="show-date">TBD</p>
+    <p class="show-date">October 2nd</p>
     <div>
-      <p class="show-venue">Alive After Five</p>
+      <p class="show-venue">School Talent Show</p>
       <p class="show-location">Lincolnton, NC</p>
     </div>
-    <span class="show-badge">Not scheduled</span>
+    <span class="show-badge">Upcoming</span>
   </div>
   <div class="show-item">
     <p class="show-date">TBD</p>
@@ -455,7 +449,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <p class="section-label">Contact</p>
   <div class="contact-block">
